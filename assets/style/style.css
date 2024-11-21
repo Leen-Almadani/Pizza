@@ -139,7 +139,9 @@ img {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: var(--z-fixed);
+  /* background-color: var(--z-fixed); */
+  /**/
+  background-color: var(--body-color);
   transition: box-shadow 0.4s;
   z-index: 3; /**/
 }
@@ -285,7 +287,7 @@ img {
   bottom: 2rem;
 }
 .home__olive {
-  left: 6rem; /*by leen*/
+  left: 6rem; /**/
   bottom: -1rem;
 }
 .home__leaf-2 {
@@ -385,10 +387,19 @@ img {
   margin-inline: initial;
   overflow: visible;
 }
-:is(.swiper-slide-active, .swiper-slide-duplicate-active).popular__img {
+/* :is(.swiper-slide-active, .swiper-slide-duplicate-active).popular__img {
   transform: scale(1) rotate(0);
 }
 :is(.swiper-slide-active, .swiper-slide-duplicate-active).popular__title {
+  opacity: 1;
+} */
+.swiper-slide-active .popular__img,
+.swiper-slide-duplicate-active .popular__img {
+  transform: scale(1) rotate(0);
+}
+
+.swiper-slide-active .popular__title,
+.swiper-slide-duplicate-active .popular__title {
   opacity: 1;
 }
 
@@ -463,6 +474,7 @@ img {
   bottom: 1.25rem;
   background-color: var(--first-color);
   color: white;
+  cursor: pointer; /**/
   padding: 4px;
   border-radius: 0.5rem;
   display: inline-flex;
@@ -768,6 +780,11 @@ img {
     align-items: start;
     padding-block: 10rem 4rem;
   }
+
+  /**/
+  .home__title {
+    font-size: var(--biggest-font-size);
+  }
   .home__data {
     text-align: initial;
     margin-top: 2rem;
@@ -838,6 +855,8 @@ img {
   .about__data .section__title {
     text-align: initial;
     margin-bottom: 1.5rem;
+    /**/
+    font-size: var(--biggest-font-size);
   }
   .about__description {
     margin-bottom: 3.5rem;
@@ -855,6 +874,8 @@ img {
   }
   .popular__data .section__title {
     margin-bottom: 1.5rem;
+    /**/
+    /* font-size: var(--bigger-font-size); */
   }
   .popular__swiper {
     width: 1000px;

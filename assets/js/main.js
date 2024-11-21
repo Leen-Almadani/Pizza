@@ -13,12 +13,13 @@ if (navClose) {
         navMenu.classList.remove('show-menu')
     })
 }
+
 const navLink = document.querySelectorAll('.nav__link');
-const linkAction = () => {
+function linkAction () {
     const navMenu = document.getElementById('nav-menu');
     navMenu.classList.remove('show-menu')
 }
-navLink.forEach(n => n.addEventListener('click', linkAction))
+navLink.forEach((n)=>n.addEventListener('click', linkAction))
 
 
 
@@ -58,6 +59,7 @@ const scrollActive = () => {
     
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight,
+
             sectionTop = current.offsetTop - 58,
             sectionId = current.getAttribute('id'),
             sectionClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
