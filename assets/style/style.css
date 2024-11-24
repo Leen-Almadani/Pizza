@@ -140,8 +140,8 @@ img {
   top: 0;
   left: 0;
   /* background-color: var(--z-fixed); */
-  /**/
-  background-color: var(--body-color);
+
+  background-color: var(--body-color); /**/
   transition: box-shadow 0.4s;
   z-index: 3; /**/
 }
@@ -781,9 +781,8 @@ img {
     padding-block: 10rem 4rem;
   }
 
-  /**/
   .home__title {
-    font-size: var(--biggest-font-size);
+    font-size: var(--biggest-font-size); /**/
   }
   .home__data {
     text-align: initial;
@@ -855,8 +854,8 @@ img {
   .about__data .section__title {
     text-align: initial;
     margin-bottom: 1.5rem;
-    /**/
-    font-size: var(--biggest-font-size);
+
+    font-size: var(--biggest-font-size); /**/
   }
   .about__description {
     margin-bottom: 3.5rem;
@@ -915,7 +914,7 @@ img {
   .recipe__img {
     width: 550px;
   }
-  /*---------recipe------*/
+  /*---------products------*/
   .products__container {
     grid-template-columns: repeat(3, 250px);
     gap: 7.5rem 4rem;
