@@ -643,6 +643,19 @@ img {
   text-align: center;
   font-size: var(--small-font-size);
 }
+.footer__myname {
+  display: block;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: var(--small-font-size);
+}
+.footer__myname a {
+  color: var(--text-color);
+  transition: color 0.4s;
+}
+.footer__myname a:hover {
+  color: var(--first-color);
+}
 /* -------------scroll bar------------------- */
 ::-webkit-scrollbar {
   width: 0.6rem;
